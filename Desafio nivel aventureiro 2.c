@@ -82,6 +82,9 @@ int main(){
     poder2 = (float)(populacao2 + area2 + pib2 + turisticos2 + percapita2 + inverso2);
 
     //MOSTRANDO OS DADOS DAS CARTAS:
+    printf("\n---------------------------------------------------\n");
+    printf("\n----------MOSTRANDO OS DADOS DAS CARTAS----------\n");
+    printf("\n---------------------------------------------------\n");
     
     printf("\n----------DADOS DA PRIMEIRA CARTA----------\n");
     printf("ESTADO: %s\n", estado);
@@ -93,7 +96,9 @@ int main(){
     printf("PONTOS TURISTICOS: %d\n", turisticos);
     printf("DENSIDADE POPULACIONAL: %.2lf\n", densidade , "hab/km²");
     printf("PIB PER CAPITA: %.2lf\n", percapita, "R$");
-    printf("SUPER PODER: %.2f\n", poder1);
+    printf("SUPER PODER(soma dos atributos da carta): %.2f\n", poder1);
+
+    printf("\n---------------------------------------------------\n");
 
     printf("\n----------DADOS DA SEGUNDA CARTA----------\n");
     printf("ESTADO: %s\n", estado2);
@@ -105,7 +110,11 @@ int main(){
     printf("PONTOS TURISTICOS: %d\n", turisticos2);
     printf("DENSIDADE POPULACIONAL: %.2lf\n", densidade2, "hab/km²");
     printf("PIB PER CAPITA: %.2lf\n", percapita2, "R$");
-    printf("SUPER PODER: %.2f\n", poder2);
+    printf("SUPER PODER(soma dos atributos da carta): %.2f\n", poder2);
+
+    printf("\n---------------------------------------------------\n");
+    printf("\n----------------COMPARACAO DAS CARTAS--------------\n");
+    printf("\n---------------------------------------------------\n");
 
 
     //COMPARANDO AS CARTAS
@@ -121,9 +130,11 @@ int main(){
 
     switch (comparar){
         case 1:
+         printf("\n---------------------------------------------------\n");
          printf("Voce escolheu comparar a populacao.\n");
          printf("A cidade da primerira carta :e %s com %lu hab.\n", cidade, populacao);
          printf("A cidade da segunda carta e: %s com %lu hab.\n", cidade2, populacao2);
+         printf("\n---------------------------------------------------\n");
          if (populacao > populacao2){
             printf("A carta numero 1 venceu !\n");
          } else if (populacao < populacao2){
@@ -133,9 +144,11 @@ int main(){
          }
         break;
         case 2:
+         printf("\n---------------------------------------------------\n");
          printf("Voce escolheu comparar a area km².\n");
          printf("A area da primerira carta e: %.2lf km²\n", area);
          printf("A area da segunda carta e: %.2lf km²\n", area2);
+         printf("\n---------------------------------------------------\n");
          if (area > area2){
             printf("A carta numero 1 venceu !\n");
          } else if (area < area2){
@@ -145,9 +158,11 @@ int main(){
          }
         break;
         case 3:
+         printf("\n---------------------------------------------------\n");
          printf("Voce escolheu comparar o PIB\n");
          printf("O PIB da primerira carta e: %.2lf R$\n", pib);
          printf("O PIB da segunda carta e: %.2lf R$\n", pib2);
+         printf("\n---------------------------------------------------\n");
          if (pib > pib2){
             printf("A carta numero 1 venceu !\n");
          } else if (pib < pib2){
@@ -157,9 +172,11 @@ int main(){
          }
         break;
         case 4:
+         printf("\n---------------------------------------------------\n");
          printf("Voce escolheu comparar os pontos turisticos\n");
          printf("Os pontos turistocs da primerira carta e: %d\n", turisticos);
          printf("Os pontos turistocs da segunda carta e: %d\n", turisticos2);
+         printf("\n---------------------------------------------------\n");
          if (turisticos > turisticos2){
             printf("A carta numero 1 venceu !\n");
          } else if (turisticos < turisticos2){
@@ -169,9 +186,11 @@ int main(){
          }
         break;
         case 5:
+         printf("\n---------------------------------------------------\n");
          printf("Voce escolheu comparar os pontos turisticos\n");
          printf("Os pontos turistocs da primerira carta e: %d\n", turisticos);
          printf("Os pontos turistocs da segunda carta e: %d\n", turisticos2);
+         printf("\n---------------------------------------------------\n");
          if (turisticos > turisticos2){
             printf("A carta numero 1 venceu !\n");
          } else if (turisticos < turisticos2){
@@ -181,9 +200,11 @@ int main(){
          }
         break;
         case 6:
+         printf("\n---------------------------------------------------\n");
          printf("Voce escolheu comparar a densidade demografica\n");
          printf("A densidade demografica da primerira carta e: %.2lf\n", densidade);
          printf("A densidade demografica da segunda carta e: %.2lf\n", densidade2);
+         printf("\n---------------------------------------------------\n");
          if (densidade > densidade2){
             printf("A carta numero 1 venceu !\n");
          } else if (densidade < densidade2){
